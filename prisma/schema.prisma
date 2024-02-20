@@ -36,3 +36,198 @@ model IndiaNewsPost {
   newsType      String?
   created_at    DateTime @default(now())
 }
+
+model BusinessNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model PoliticsNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model SportsNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model TechnologyNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model StartupsNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model EntertainmentNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model HatkeNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model InternationalNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model AutomobileNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model ScienceNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model TravelNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model MiscellaneousNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model FashionNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model EducationNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
+model HealthAndFitnessNewsPost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String
+  newsContent   String
+  newsImageUrl  String
+  newsSlug      String   @unique
+  newsSource    String
+  newsSourceUrl String
+  newsTitle     String
+  newsType      String?
+  created_at    DateTime @default(now())
+}
