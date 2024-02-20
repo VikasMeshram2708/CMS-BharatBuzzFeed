@@ -2,7 +2,6 @@ import { Response, Request } from "express";
 import connectToDb from "../helpers/connectToDb";
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
-const { HOME_PAGE_LINK } = process.env;
 
 const FilterNewsController = async (req: Request, res: Response) => {
   try {
