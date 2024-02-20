@@ -12,12 +12,12 @@
 - [x] Technology.
 - [x] Startups.
 - [x] Entertainment.
-- [] Hatke.
-- [] International.
-- [] Automobile.
-- [] Science.
-- [] Travel.
-- [] Miscellaneous.
-- [] Fashion.
-- [] Education.
-- [] Health & Fitness.
+- [x] Hatke.
+- [x] International.
+- [x] Automobile.
+- [x] Science.
+- [x] Travel.
+- [x] Miscellaneous.
+- [x] Fashion.
+- [x] Education.
+- [x] Health & Fitness.
