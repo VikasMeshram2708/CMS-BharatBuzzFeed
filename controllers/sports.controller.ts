@@ -2,12 +2,12 @@ import { Response, Request } from "express";
 import connectToDb from "../helpers/connectToDb";
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
-const { POLITICS_PAGE_LINK } = process.env;
+const { SPORTS_PAGE_LINK } = process.env;
 
-const PoliticsPageController = async (req: Request, res: Response) => {
+const SportsPageController = async (req: Request, res: Response) => {
   try {
     // console.log("india-site", JSON.parse(INDIA_PAGE_LINK));
-    const response = await fetch(POLITICS_PAGE_LINK!);
+    const response = await fetch(SPORTS_PAGE_LINK!);
     const result = await response.json();
     const newsData = result.data?.news_list;
 
@@ -26,7 +26,7 @@ const PoliticsPageController = async (req: Request, res: Response) => {
 
     await connectToDb();
     // save to DB
-    await prisma.politicsNewsPost.createMany({
+    await prisma.sportsNewsPost.createMany({
       data: items,
     });
 
@@ -46,4 +46,4 @@ const PoliticsPageController = async (req: Request, res: Response) => {
   }
 };
 
-export default PoliticsPageController;
+export default SportsPageController;

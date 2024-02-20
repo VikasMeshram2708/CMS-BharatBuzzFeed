@@ -3,6 +3,11 @@ import HomePageController from "../controllers/home.controller";
 import FilterNewsController from "../controllers/filter.controller";
 import IndiaPageController from "../controllers/india.controller";
 import BusinessPageController from "../controllers/business.controller";
+import PoliticsPageController from "../controllers/politics.controller";
+import SportsPageController from "../controllers/sports.controller";
+import TechnologyPageController from "../controllers/technology.controller";
+import StartUpsPageController from "../controllers/startups.controller";
+import EntertainmentPageController from "../controllers/entertainment.controller";
 
 const router = express.Router();
 
@@ -12,11 +17,11 @@ router.post("/home-page", HomePageController);
 router.get("/filter-news/:id", FilterNewsController);
 router.post("/india-page", IndiaPageController);
 router.post("/business-page", BusinessPageController);
-router.post("/politics-page", BusinessPageController);
-router.post("/sports-page", BusinessPageController);
-router.post("/technology-page", BusinessPageController);
-router.post("/startups-page", BusinessPageController);
-router.post("/entertainment-page", BusinessPageController);
+router.post("/politics-page", PoliticsPageController);
+router.post("/sports-page", SportsPageController);
+router.post("/technology-page", TechnologyPageController);
+router.post("/startups-page", StartUpsPageController);
+router.post("/entertainment-page", EntertainmentPageController);
 router.post("/hatke-page", BusinessPageController);
 router.post("/international-page", BusinessPageController);
 router.post("/automobile-page", BusinessPageController);

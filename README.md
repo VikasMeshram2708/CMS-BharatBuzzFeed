@@ -7,11 +7,11 @@
 - [x] Home.
 - [x] India.
 - [x] Business.
-- [] Politics.
-- [] Sports.
-- [] Technology.
-- [] Startups.
-- [] Entertainment.
+- [x] Politics.
+- [x] Sports.
+- [x] Technology.
+- [x] Startups.
+- [x] Entertainment.
 - [] Hatke.
 - [] International.
 - [] Automobile.
