@@ -6,7 +6,6 @@ const { HEALTH_AND_FITNESS_PAGE_LINK } = process.env;
 
 const healthPageController = async (req: Request, res: Response) => {
   try {
-    // console.log("india-site", JSON.parse(INDIA_PAGE_LINK));
     const response = await fetch(HEALTH_AND_FITNESS_PAGE_LINK!);
     const result = await response.json();
     const newsData = result.data?.news_list;
@@ -21,8 +20,6 @@ const healthPageController = async (req: Request, res: Response) => {
       newsSource: item?.news_obj?.source_name,
       newsSourceUrl: item?.news_obj?.source_url,
     }));
-
-    console.log("items", items.length);
 
     await connectToDb();
     // save to DB

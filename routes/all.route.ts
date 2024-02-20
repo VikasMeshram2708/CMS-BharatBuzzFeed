@@ -18,11 +18,13 @@ import FashionPageController from "../controllers/fashion.controller";
 import EducationPageController from "../controllers/education.controller";
 import healthPageController from "../controllers/health.controller";
 import DeleteController from "../controllers/delete.controller";
+import InvokeAllController from "../controllers/invoke.controller";
 
 const router = express.Router();
 
 // HOME page api
 
+router.post("/invoke-all", InvokeAllController);
 router.post("/delete-all", DeleteController);
 router.post("/home-page", HomePageController);
 router.get("/filter-news/:id", FilterNewsController);

@@ -6,7 +6,6 @@ const { MISCELLANEOUS_PAGE_LINK } = process.env;
 
 const MiscellaneousPageController = async (req: Request, res: Response) => {
   try {
-    // console.log("india-site", JSON.parse(INDIA_PAGE_LINK));
     const response = await fetch(MISCELLANEOUS_PAGE_LINK!);
     const result = await response.json();
     const newsData = result.data?.news_list;
@@ -21,8 +20,6 @@ const MiscellaneousPageController = async (req: Request, res: Response) => {
       newsSource: item?.news_obj?.source_name,
       newsSourceUrl: item?.news_obj?.source_url,
     }));
-
-    console.log("items", items.length);
 
     await connectToDb();
     // save to DB

@@ -20,8 +20,6 @@ const HomePageController = async (req: Request, res: Response) => {
       newsSourceUrl: item?.news_obj?.source_url,
     }));
 
-    console.log("items", items.length);
-
     await connectToDb();
     // save to DB
     await prisma.newsPost.createMany({

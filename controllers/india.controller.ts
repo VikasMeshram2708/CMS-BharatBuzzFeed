@@ -2,14 +2,11 @@ import { Response, Request } from "express";
 import connectToDb from "../helpers/connectToDb";
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
-// const { INDIA_PAGE_LINK } = process.env;
+const { INDIA_PAGE_LINK } = process.env;
 
 const IndiaPageController = async (req: Request, res: Response) => {
   try {
-    // console.log("india-site", JSON.parse(INDIA_PAGE_LINK));
-    const response = await fetch(
-      "https://m.inshorts.com/api/en/search/trending_topics/national?page=1&type=NEWS_CATEGORY"
-    );
+    const response = await fetch(INDIA_PAGE_LINK!);
     const result = await response.json();
     const newsData = result.data?.news_list;
 
@@ -23,8 +20,6 @@ const IndiaPageController = async (req: Request, res: Response) => {
       newsSource: item?.news_obj?.source_name,
       newsSourceUrl: item?.news_obj?.source_url,
     }));
-
-    console.log("items", items.length);
 
     await connectToDb();
     // save to DB

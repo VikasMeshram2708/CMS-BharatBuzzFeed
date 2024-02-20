@@ -1,6 +1,5 @@
 import { Response, Request } from "express";
 import MongoConnect, { db } from "../helpers/Db";
-const { DB_NAME } = process.env;
 
 const DeleteController = async (req: Request, res: Response) => {
   try {
