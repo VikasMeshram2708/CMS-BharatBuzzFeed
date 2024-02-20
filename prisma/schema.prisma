@@ -19,6 +19,6 @@ model NewsPost {
   newsSource    String
   newsSourceUrl String
   newsTitle     String
-  newsType      String
+  newsType      String?
   created_at    DateTime @default(now())
 }
