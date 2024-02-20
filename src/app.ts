@@ -6,7 +6,7 @@ const app = express();
 
 import morgan from "morgan";
 // Route FILES
-import home from "../routes/home.route";
+import allRotues from "../routes/all.route";
 
 // Middlewares
 app.use(morgan("dev"));
@@ -23,6 +23,6 @@ app.get("/", (req: Request, res: Response) => {
     message: "Hello,World!",
   });
 });
-app.use("/api", home);
+app.use("/api", allRotues);
 
 export default app;

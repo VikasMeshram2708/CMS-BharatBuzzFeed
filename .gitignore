@@ -1,5 +1,8 @@
 # modules
 node_modules
 
+# folders
+.vscode
+
 # enviornment files
 .env

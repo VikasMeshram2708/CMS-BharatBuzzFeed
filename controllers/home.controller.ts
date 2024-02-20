@@ -1,4 +1,4 @@
-import express, { Response, Request } from "express";
+import { Response, Request } from "express";
 import connectToDb from "../helpers/connectToDb";
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
