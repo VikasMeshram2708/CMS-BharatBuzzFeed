@@ -5,6 +5,8 @@ dotenv.config();
 const app = express();
 
 import morgan from "morgan";
+// Route FILES
+import home from "../routes/home.route";
 
 // Middlewares
 app.use(morgan("dev"));
@@ -21,5 +23,6 @@ app.get("/", (req: Request, res: Response) => {
     message: "Hello,World!",
   });
 });
+app.use("/api", home);
 
 export default app;
