@@ -17,11 +17,13 @@ import MiscellaneousPageController from "../controllers/miscellaneous.controller
 import FashionPageController from "../controllers/fashion.controller";
 import EducationPageController from "../controllers/education.controller";
 import healthPageController from "../controllers/health.controller";
+import DeleteController from "../controllers/delete.controller";
 
 const router = express.Router();
 
 // HOME page api
 
+router.post("/delete-all", DeleteController);
 router.post("/home-page", HomePageController);
 router.get("/filter-news/:id", FilterNewsController);
 router.post("/india-page", IndiaPageController);
