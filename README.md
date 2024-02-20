@@ -5,4 +5,19 @@
 ### API Completed for Pages
 
 - [x] Home.
-- [] India.
+- [x] India.
+- [x] Business.
+- [] Politics.
+- [] Sports.
+- [] Technology.
+- [] Startups.
+- [] Entertainment.
+- [] Hatke.
+- [] International.
+- [] Automobile.
+- [] Science.
+- [] Travel.
+- [] Miscellaneous.
+- [] Fashion.
+- [] Education.
+- [] Health & Fitness.
