@@ -22,7 +22,7 @@ const HomePageController = async (req: Request, res: Response) => {
 
     await connectToDb();
     // save to DB
-    await prisma.newsPost.createMany({
+    await prisma.homePagePost.createMany({
       data: items,
     });
 

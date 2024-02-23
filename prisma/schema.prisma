@@ -11,6 +11,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model HomePagePost {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  newsAuthor    String?
+  newsContent   String?
+  newsImageUrl  String?
+  newsSlug      String?  @unique
+  newsSource    String?
+  newsSourceUrl String?
+  newsTitle     String?
+  newsType      String?
+  created_at    DateTime @default(now())
+}
+
 model NewsPost {
   id            String   @id @default(auto()) @map("_id") @db.ObjectId
   newsAuthor    String?
