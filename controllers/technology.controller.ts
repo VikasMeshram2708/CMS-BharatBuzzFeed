@@ -2,11 +2,11 @@ import { Response, Request } from "express";
 import connectToDb from "../helpers/connectToDb";
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
-const { SPORTS_PAGE_LINK } = process.env;
+const { TECHNOLOGY_PAGE_LINK } = process.env;
 
 const TechnologyPageController = async (req: Request, res: Response) => {
   try {
-    const response = await fetch(SPORTS_PAGE_LINK!);
+    const response = await fetch(TECHNOLOGY_PAGE_LINK!);
     const result = await response.json();
     const newsData = result.data?.news_list;
 
